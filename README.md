@@ -46,7 +46,7 @@ Travel-Camping--NextJS-Frontend
 https://github.com/yyyyyyy4/Travel-Camping--NextJS-Frontend  
 
 This project is created for independent learning and demonstration purposes.
-Special thanks to the original author for their open-source contribution.  =
+Special thanks to the original author for their open-source contribution.
 
 ---
 
