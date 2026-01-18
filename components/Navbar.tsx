@@ -1,7 +1,7 @@
 import { NAV_LINKS } from "@/constants"
 // ...existing code...
 import Link from "next/link"
-import Button from "./Button"
+import Button, { BUTTON_VARIANTS } from "./Button"
 
 const Navbar = () => {
   return (
@@ -19,15 +19,16 @@ const Navbar = () => {
       </ul>
 
       <div className="lg:flexCenter hidden">
-        <Button 
+        <Button
           type="button"
           title="Login"
           icon="/user.svg"
-          variant="btn_dark_green"
+          variant={BUTTON_VARIANTS.DARK_GREEN}
+          // variant="btn_dark_green"
         />
       </div>
 
-      <img 
+      <img
         src="/menu.svg"
         alt="menu"
         width={32}

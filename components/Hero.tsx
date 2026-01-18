@@ -1,5 +1,5 @@
 // ...existing code...
-import Button from './Button'
+import Button, { BUTTON_VARIANTS } from './Button'
 
 const Hero = () => {
   return (
@@ -41,16 +41,18 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
-          <Button 
-            type="button" 
-            title="Download App" 
-            variant="btn_green" 
+          <Button
+            type="button"
+            title="Download App"
+            variant={BUTTON_VARIANTS.GREEN}
+            // variant="btn_green"
           />
-          <Button 
-            type="button" 
-            title="How we work?" 
+          <Button
+            type="button"
+            title="How we work?"
             icon="/play.svg"
-            variant="btn_white_text" 
+            variant={BUTTON_VARIANTS.WHITE_TEXT}
+            // variant="btn_white_text"
           />
         </div>
       </div>

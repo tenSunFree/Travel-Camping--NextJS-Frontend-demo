@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './Button'
+import Button, { BUTTON_VARIANTS } from './Button'
 // ...existing code...
 
 const GetApp = () => {
@@ -10,18 +10,20 @@ const GetApp = () => {
           <h2 className="bold-40 lg:bold-64 xl:max-w-[320px]">Get for free now!</h2>
           <p className="regular-16 text-gray-10">Available on iOS and Android</p>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row">
-            <Button 
+             <Button
               type="button"
               title="App Store"
               icon="/apple.svg"
-              variant="btn_white"
+              variant={BUTTON_VARIANTS.WHITE}
+              // variant="btn_white"
               full
             />
-            <Button 
+            <Button
               type="button"
               title="Play Store"
               icon="/android.svg"
-              variant="btn_dark_green_outline"
+              variant={BUTTON_VARIANTS.DARK_GREEN_OUTLINE}
+              // variant="btn_dark_green_outline"
               full
             />
           </div>
