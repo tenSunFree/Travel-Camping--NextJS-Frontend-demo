@@ -19,6 +19,7 @@ export default function Home() {
           }}
         />
       </div>
+      {/* Campsite section */}
       <Camp />
       {/* Colored dividers between sections */}
       <div style={{ display: 'flex', justifyContent: 'center' }}>

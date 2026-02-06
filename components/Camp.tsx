@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Camp = () => {
   return (
-    <section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
+    <section className="2xl:max-container flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20 2xl:bg-[#12377800]">
       {/* Wrap content with motion.div */}
       <div className="overflow-hidden">
         {' '}
@@ -56,7 +56,7 @@ const Camp = () => {
         />
       </div>
       */}
-
+      {/* Text content below the campsites */}
       <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6">
         <div className="relative w-full overflow-hidden rounded-3xl bg-green-50 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20">
           <h2 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white">
@@ -113,7 +113,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampSitePr
     >
       <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
         {/* Image title */}
-        <div className="flexCenter gap-4 bg-[#457778]">
+        <div className="flexCenter gap-4 bg-[#45777800]">
           <div className="rounded-full bg-green-50 p-4">
             <img draggable={false} src="/folded-map.svg" alt="map" width={28} height={28} />
           </div>
@@ -123,7 +123,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampSitePr
           </div>
         </div>
         {/* People avatars and joined count */}
-        <div className="flexCenter gap-6 bg-[#997778]">
+        <div className="flexCenter gap-6 bg-[#99777800]">
           <span className="flex -space-x-4 overflow-hidden">
             {PEOPLE_URL.map((url) => (
               <img
