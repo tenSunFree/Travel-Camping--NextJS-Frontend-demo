@@ -36,7 +36,11 @@ This project is for learning and technical practice.
 - Next.js  
   React framework (App Router, SSR/SSG, full-stack routing)    
 - Tailwind CSS  
-  Utility-first styling  
+  Utility-first styling    
+- clsx  
+  Utility for constructing className strings conditionally    
+- tailwind-merge  
+  Utility to merge Tailwind CSS classes in JS without style conflicts  
 
 ---
 
