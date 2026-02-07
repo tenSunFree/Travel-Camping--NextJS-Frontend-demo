@@ -3,11 +3,28 @@ import Features from '@/components/Features'
 import GetApp from '@/components/GetApp'
 import Guide from '@/components/Guide'
 import Hero from '@/components/Hero'
+import HeroSkeleton from '@/components/HeroSkeleton'
+import { Suspense } from 'react'
 
+/**
+ * Home page component for the Travel/Camping Next.js application.
+ *
+ * Renders the main landing page with multiple sections separated by colored dividers:
+ * - Hero section with lazy loading fallback
+ * - Camp section
+ * - Guide section
+ * - Features section
+ * - GetApp section
+ *
+ * @returns {JSX.Element} The complete home page layout with all sections and dividers
+ */
 export default function Home() {
   return (
     <>
-      <Hero />
+      {/* Hero section with lazy loading fallback */}
+      <Suspense fallback={<HeroSkeleton />}>
+        <Hero />
+      </Suspense>
       {/* Colored dividers between sections */}
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <hr

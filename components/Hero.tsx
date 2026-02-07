@@ -1,8 +1,17 @@
 import Button, { BUTTON_VARIANTS } from './Button'
 
-const Hero = () => {
+// Define delay function
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
+
+// Convert component to async (Server Component)
+const Hero = async () => {
+  // Force the program to wait 6 seconds
+  await delay(6000)
+  // Can be replaced with real data fetching later
+  // const campData = await fetch('https://api.yourcamp.com/data').then(res => res.json())
+
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    <section className="max-container padding-container flex flex-col gap-20 bg-[#F00078F00] py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
       {/* Map background */}
       <div className="hero-map" />
       {/* Putuk Truno Camp Area text content */}
