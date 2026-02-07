@@ -63,3 +63,79 @@ If there is any infringement, please contact me for removal. Thank you.
 This repository is intended for learning and demonstration.  
 
 If you plan to open-source it, please choose a license and confirm third-party asset usage rights.  
+
+---
+
+## Project Structure  
+
+```
+Travel-Camping--NextJS-Frontend-demo
+├─ app
+│  ├─ favicon.ico
+│  ├─ globals.css
+│  ├─ layout.tsx
+│  └─ page.tsx
+├─ components
+│  ├─ Button.tsx
+│  ├─ Camp.tsx
+│  ├─ Features.tsx
+│  ├─ Footer.tsx
+│  ├─ GetApp.tsx
+│  ├─ Guide.tsx
+│  ├─ Hero.tsx
+│  └─ Navbar.tsx
+├─ constants
+│  └─ index.ts
+├─ eslint.config.mjs
+├─ next-env.d.ts
+├─ next.config.js
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.js
+├─ prettier.config.cjs
+├─ public
+│  ├─ android.svg
+│  ├─ apple.svg
+│  ├─ boat.png
+│  ├─ calendar.svg
+│  ├─ camp.svg
+│  ├─ close.svg
+│  ├─ facebook.svg
+│  ├─ feature-bg.png
+│  ├─ file.svg
+│  ├─ folded-map.svg
+│  ├─ globe.svg
+│  ├─ hero-bg.svg
+│  ├─ hero.png
+│  ├─ hilink-logo.svg
+│  ├─ img-1.png
+│  ├─ img-2.png
+│  ├─ instagram.svg
+│  ├─ location.svg
+│  ├─ map.svg
+│  ├─ menu.svg
+│  ├─ meter.svg
+│  ├─ next.svg
+│  ├─ pattern-bg.png
+│  ├─ pattern.png
+│  ├─ person-1.png
+│  ├─ person-2.png
+│  ├─ person-3.png
+│  ├─ person-4.png
+│  ├─ phone.png
+│  ├─ phones.png
+│  ├─ play.svg
+│  ├─ quote.svg
+│  ├─ star.svg
+│  ├─ tech.svg
+│  ├─ twitter.svg
+│  ├─ user.svg
+│  ├─ vercel.svg
+│  ├─ window.svg
+│  ├─ wordpress.svg
+│  └─ youtube.svg
+├─ README.md
+├─ tailwind.config.ts
+└─ tsconfig.json
+
+```
