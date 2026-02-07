@@ -87,10 +87,13 @@ Travel-Camping--NextJS-Frontend-demo
 │  ├─ GetApp.tsx
 │  ├─ Guide.tsx
 │  ├─ Hero.tsx
+│  ├─ HeroSkeleton.tsx
 │  └─ Navbar.tsx
 ├─ constants
 │  └─ index.ts
 ├─ eslint.config.mjs
+├─ lib
+│  └─ utils.ts
 ├─ next-env.d.ts
 ├─ next.config.js
 ├─ package-lock.json
