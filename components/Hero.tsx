@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Button, { BUTTON_VARIANTS } from './Button'
 
 // Define delay function
@@ -11,18 +12,18 @@ const Hero = async () => {
   // const campData = await fetch('https://api.yourcamp.com/data').then(res => res.json())
 
   return (
-    <section className="max-container padding-container flex flex-col gap-20 bg-[#F00078F00] py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    <section className="max-container padding-container flex flex-col gap-20 bg-green-500 py-10 pb-32 xs:bg-orange-500 sm:bg-yellow-500 md:gap-28 md:bg-green-500 lg:bg-blue-500 lg:py-20 xl:flex-row xl:bg-indigo-500 2xl:bg-purple-500 3xl:bg-pink-500 4xl:bg-black">
       {/* Map background */}
       <div className="hero-map" />
       {/* Putuk Truno Camp Area text content */}
-      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
-        <img
+      <div className="relative z-20 flex flex-1 flex-col bg-green-200 xl:w-1/2">
+        <Image
           src="/camp.svg"
           alt="camp"
           width={50}
           height={50}
-          className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
-          style={{ width: 'auto', height: 'auto' }}
+          className="absolute left-[-5px] top-[-30px] h-10 w-10 lg:h-[50px] lg:w-[50px]"
+          unoptimized
         />
         <h1 className="bold-52 lg:bold-88">Putuk Truno Camp Area</h1>
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
@@ -35,13 +36,14 @@ const Hero = async () => {
             {Array(5)
               .fill(1)
               .map((_, index) => (
-                <img
-                  src="/star.svg"
+                <Image
                   key={index}
+                  src="/star.svg"
                   alt="star"
                   width={24}
                   height={24}
-                  style={{ width: 'auto', height: 'auto' }}
+                  className="h-6 w-6"
+                  unoptimized
                 />
               ))}
           </div>
@@ -72,12 +74,13 @@ const Hero = async () => {
           <div className="flex flex-col">
             <div className="flexBetween">
               <p className="regular-16 text-gray-20">Location</p>
-              <img
+              <Image
                 src="/close.svg"
                 alt="close"
                 width={24}
                 height={24}
-                style={{ width: 'auto', height: 'auto' }}
+                className="h-6 w-6"
+                unoptimized
               />
             </div>
             <p className="bold-20 text-white">Aguas Calientes</p>
