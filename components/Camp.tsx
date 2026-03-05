@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Camp = () => {
   return (
-    <section className="2xl:max-container flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20 2xl:bg-[#12377800]">
+    <section className="2xl:max-container flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20 2xl:bg-[#12377850]">
       {/* Wrap content with motion.div */}
       <div className="overflow-hidden">
         {' '}
@@ -15,19 +15,19 @@ const Camp = () => {
           className="flex h-[340px] w-full cursor-grab items-start justify-start gap-8 active:cursor-grabbing lg:h-[400px] xl:h-[640px]"
         >
           <CampSite
-            backgroundImage="bg-bg-img-2"
+            backgroundImage="bg-img-2"
             title="Putuk Truno Camp"
             subtitle="Prigen, Pasuruan"
             peopleJoined="50+ Joined"
           />
           <CampSite
-            backgroundImage="bg-bg-img-1"
+            backgroundImage="bg-img-1"
             title="Mountain View Camp"
             subtitle="Somewhere in the Wilderness"
             peopleJoined="50+ Joined"
           />
           <CampSite
-            backgroundImage="bg-bg-img-2"
+            backgroundImage="bg-img-2"
             title="Mountain View Camp"
             subtitle="Somewhere in the Wilderness"
             peopleJoined="50+ Joined"
@@ -37,19 +37,19 @@ const Camp = () => {
       {/*
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
         <CampSite
-          backgroundImage="bg-bg-img-2"
+          backgroundImage="bg-img-2"
           title="Putuk Truno Camp"
           subtitle="Prigen, Pasuruan"
           peopleJoined="50+ Joined"
         />
         <CampSite
-          backgroundImage="bg-bg-img-1"
+          backgroundImage="bg-img-1"
           title="Mountain View Camp"
           subtitle="Somewhere in the Wilderness"
           peopleJoined="50+ Joined"
         />
         <CampSite
-          backgroundImage="bg-bg-img-2"
+          backgroundImage="bg-img-2"
           title="Mountain View Camp"
           subtitle="Somewhere in the Wilderness"
           peopleJoined="50+ Joined"
