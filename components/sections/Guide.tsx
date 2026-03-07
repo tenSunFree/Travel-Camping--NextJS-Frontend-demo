@@ -16,7 +16,7 @@ const Guide = () => {
           </p>
         </div>
       </div>
-      <div className="flexCenter max-container relative w-full">
+      <div className="flexCenter max-container relative w-full bg-yellow-50">
         <Image
           src="/boat.png"
           alt="boat"

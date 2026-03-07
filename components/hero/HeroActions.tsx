@@ -1,6 +1,6 @@
 'use client'
 
-import Button, { BUTTON_VARIANTS } from './Button'
+import { Button, BUTTON_VARIANTS } from '../ui'
 
 export default function HeroActions() {
   return (
@@ -10,14 +10,12 @@ export default function HeroActions() {
         title="Download App"
         variant={BUTTON_VARIANTS.GREEN}
         onClick={() => (window.location.href = 'https://ash-speed.hetzner.com/100MB.bin')}
-        // variant="btn_green"
       />
       <Button
         type="button"
         title="How we work?"
         icon="/play.svg"
         variant={BUTTON_VARIANTS.WHITE_TEXT}
-        // variant="btn_white_text"
       />
     </div>
   )

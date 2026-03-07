@@ -1,5 +1,4 @@
 import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '@/constants'
-// ...existing code...
 import Link from 'next/link'
 import React from 'react'
 

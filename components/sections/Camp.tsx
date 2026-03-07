@@ -5,13 +5,10 @@ import { motion } from 'framer-motion'
 const Camp = () => {
   return (
     <section className="2xl:max-container flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20 2xl:bg-[#12377850]">
-      {/* Wrap content with motion.div */}
       <div className="overflow-hidden">
-        {' '}
-        {/* Outer overflow hidden */}
         <motion.div
           drag="x"
-          dragConstraints={{ right: 0, left: -2000 }} // Left constraint should be calculated based on content length or obtained dynamically
+          dragConstraints={{ right: 0, left: -2000 }}
           className="flex h-[340px] w-full cursor-grab items-start justify-start gap-8 active:cursor-grabbing lg:h-[400px] xl:h-[640px]"
         >
           <CampSite
@@ -34,29 +31,6 @@ const Camp = () => {
           />
         </motion.div>
       </div>
-      {/*
-      <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
-        <CampSite
-          backgroundImage="bg-img-2"
-          title="Putuk Truno Camp"
-          subtitle="Prigen, Pasuruan"
-          peopleJoined="50+ Joined"
-        />
-        <CampSite
-          backgroundImage="bg-img-1"
-          title="Mountain View Camp"
-          subtitle="Somewhere in the Wilderness"
-          peopleJoined="50+ Joined"
-        />
-        <CampSite
-          backgroundImage="bg-img-2"
-          title="Mountain View Camp"
-          subtitle="Somewhere in the Wilderness"
-          peopleJoined="50+ Joined"
-        />
-      </div>
-      */}
-      {/* Text content below the campsites */}
       <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6">
         <div className="relative w-full overflow-hidden rounded-3xl bg-green-50 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20">
           <h2 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white">
@@ -80,13 +54,6 @@ const Camp = () => {
     </section>
   )
 }
-
-// interface CampProps {
-//   backgroundImage: string
-//   title: string
-//   subtitle: string
-//   peopleJoined: string
-// }
 
 type CampSiteProps = {
   backgroundImage: string

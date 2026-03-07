@@ -1,9 +1,6 @@
-import Camp from '@/components/Camp'
-import Features from '@/components/Features'
-import GetApp from '@/components/GetApp'
-import Guide from '@/components/Guide'
-import Hero from '@/components/Hero'
-import HeroSkeleton from '@/components/HeroSkeleton'
+import { Camp, Features, GetApp, Guide } from '@/components/sections'
+import { Hero } from '@/components/hero'
+import { HeroSkeleton } from '@/components/ui'
 import { Suspense } from 'react'
 
 /**

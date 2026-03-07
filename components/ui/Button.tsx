@@ -15,7 +15,6 @@ type ButtonProps = {
   title: string
   icon?: string
   variant: Variant
-  // variant: string;
   full?: boolean
   onClick?: () => void
 }

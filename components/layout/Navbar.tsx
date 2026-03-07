@@ -1,7 +1,6 @@
 import { NAV_LINKS } from "@/constants"
-// ...existing code...
 import Link from "next/link"
-import Button, { BUTTON_VARIANTS } from "./Button"
+import { Button, BUTTON_VARIANTS } from "../ui"
 
 const Navbar = () => {
   return (
@@ -24,7 +23,6 @@ const Navbar = () => {
           title="Login"
           icon="/user.svg"
           variant={BUTTON_VARIANTS.DARK_GREEN}
-          // variant="btn_dark_green"
         />
       </div>
 

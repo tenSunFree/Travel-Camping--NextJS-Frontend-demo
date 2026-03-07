@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Button, { BUTTON_VARIANTS } from './Button'
 import HeroActions from './HeroActions'
 
 // Define delay function
@@ -8,15 +7,12 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 // Convert component to async (Server Component)
 const Hero = async () => {
   // Force the program to wait 6 seconds
-  await delay(6000)
+  await delay(2000)
   // Can be replaced with real data fetching later
   // const campData = await fetch('https://api.yourcamp.com/data').then(res => res.json())
-
   return (
     <section className="max-container padding-container flex flex-col gap-20 bg-green-500 py-10 pb-32 xs:bg-orange-500 sm:bg-yellow-500 md:gap-28 md:bg-green-500 lg:bg-blue-500 lg:py-20 xl:flex-row xl:bg-indigo-500 2xl:bg-purple-500 3xl:bg-pink-500 4xl:bg-black">
-      {/* Map background */}
       <div className="hero-map" />
-      {/* Putuk Truno Camp Area text content */}
       <div className="relative z-20 flex flex-1 flex-col bg-green-200 xl:w-1/2">
         <Image
           src="/camp.svg"
@@ -32,7 +28,6 @@ const Hero = async () => {
           incorruptible beauty of nature. We can help you on an adventure around the world in just
           one app.
         </p>
-        {/* Stars and Excellent Reviews */}
         <div className="my-11 flex flex-wrap items-center gap-5 bg-red-500">
           <div className="flex items-center gap-2">
             {Array(5)
@@ -56,7 +51,6 @@ const Hero = async () => {
         </div>
         <HeroActions />
       </div>
-      {/* Location and details card */}
       <div className="relative flex flex-1 items-start">
         <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
           <div className="flex flex-col">
