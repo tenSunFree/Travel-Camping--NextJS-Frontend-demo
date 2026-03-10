@@ -17,6 +17,10 @@
     @apply font-sans;
     /* Default text color */
     @apply text-gray-90;
+    /* Limit minimum width to 320px (typical smallest mobile device) */
+    /* Apply this constraint to both html and body */
+    min-width: 320px;
+    width: 100%;
   }
 }
 

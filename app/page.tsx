@@ -1,6 +1,6 @@
 import { Camp, Features, GetApp, Guide } from '@/components/sections'
 import { Hero } from '@/components/hero'
-import { HeroSkeleton } from '@/components/ui'
+import { HeroSkeleton } from '@/components/hero'
 import { Suspense } from 'react'
 
 /**

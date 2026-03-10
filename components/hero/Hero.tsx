@@ -11,7 +11,7 @@ const Hero = async () => {
   // Can be replaced with real data fetching later
   // const campData = await fetch('https://api.yourcamp.com/data').then(res => res.json())
   return (
-    <section className="max-container padding-container flex flex-col gap-20 bg-green-500 py-10 pb-32 xs:bg-orange-500 sm:bg-yellow-500 md:gap-28 md:bg-green-500 lg:bg-blue-500 lg:py-20 xl:flex-row xl:bg-indigo-500 2xl:bg-purple-500 3xl:bg-pink-500 4xl:bg-black">
+    <section className="max-container padding-container flex flex-col gap-20 bg-green-500 py-10 pb-32 xs:bg-orange-500 sm:bg-yellow-500 md:gap-28 md:bg-green-500 lg:flex-row lg:bg-teal-950 lg:py-20 xl:bg-yellow-900 2xl:bg-purple-500 3xl:bg-pink-500 4xl:bg-black">
       <div className="hero-map" />
       <div className="relative z-20 flex flex-1 flex-col bg-green-200 xl:w-1/2">
         <Image
