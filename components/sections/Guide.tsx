@@ -1,8 +1,18 @@
 import Image from 'next/image'
 
 const Guide = () => {
+  const destination = {
+    label: 'Destination',
+    time: '48 min',
+    name: 'Aguas Calientes',
+  }
+  const startTrack = {
+    label: 'Start track',
+    name: 'Wonorejo Pasuruan',
+  }
   return (
-    <section className="max-container flexCenter flex-col bg-red-500">
+    <section className="flexCenter flex-col">
+      {/* Title Introduction */}
       <div className="padding-container max-container w-full bg-green-400 pb-24">
         <Image src="/camp.svg" alt="camp" width={50} height={50} unoptimized />
         <p className="regular-18 -mt-1 mb-3 uppercase text-green-50">We are here for you</p>
@@ -16,6 +26,7 @@ const Guide = () => {
           </p>
         </div>
       </div>
+      {/* Large image and Destination related */}
       <div className="flexCenter max-container relative w-full bg-yellow-50">
         <Image
           src="/boat.png"
@@ -28,16 +39,16 @@ const Guide = () => {
         <div className="absolute flex gap-3 rounded-3xl border bg-white py-8 pl-5 pr-7 shadow-md md:left-[5%] lg:top-20">
           <Image src="/meter.svg" alt="meter" width={16} height={158} unoptimized />
           <div className="flexBetween flex-col">
-            <div className="flex w-full flex-col">
+            <div className="flex w-full flex-col bg-red-400">
               <div className="flexBetween w-full">
-                <p className="regular-16 text-gray-20">Destination</p>
-                <p className="bold-16 text-green-50">48 min</p>
+                <p className="regular-16 text-gray-20">{destination.label}</p>
+                <p className="bold-16 text-green-50">{destination.time}</p>
               </div>
-              <p className="bold-20 mt-2">Aguas Calientes</p>
+              <p className="bold-20 mt-2">{destination.name}</p>
             </div>
-            <div className="flex w-full flex-col">
-              <p className="regular-16 text-gray-20">Start track</p>
-              <h4 className="bold-20 mt-2 whitespace-nowrap">Wonorejo Pasuruan</h4>
+            <div className="flex w-full flex-col bg-blue-400">
+              <p className="regular-16 text-gray-20">{startTrack.label}</p>
+              <h4 className="bold-20 mt-2 whitespace-nowrap">{startTrack.name}</h4>
             </div>
           </div>
         </div>
