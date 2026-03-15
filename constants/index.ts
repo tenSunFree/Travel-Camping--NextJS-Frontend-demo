@@ -1,22 +1,57 @@
+export type NavLink = {
+  href: string
+  key: string
+  label: string
+}
+
+export type FeatureVariant = 'green' | 'orange'
+
+export type Feature = {
+  title: string
+  icon: string
+  variant: FeatureVariant
+  description: string
+}
+
+export type FooterLinkGroup = {
+  title: string
+  links: string[]
+}
+
+export type ContactLink = {
+  label: string
+  value: string
+}
+
+export type ContactInfo = {
+  title: string
+  links: ContactLink[]
+}
+
+export type Socials = {
+  title: string
+  links: string[]
+}
+
 // NAVIGATION
-export const NAV_LINKS = [
+export const NAV_LINKS: NavLink[] = [
   { href: '/', key: 'home', label: 'Home' },
   { href: '/', key: 'how_hilink_work', label: 'How Hilink Work?' },
   { href: '/', key: 'services', label: 'Services' },
   { href: '/', key: 'pricing ', label: 'Pricing ' },
   { href: '/', key: 'contact_us', label: 'Contact Us' },
-];
+]
 
 // CAMP SECTION
-export const PEOPLE_URL = [
+export const PEOPLE_URL: string[] = [
   '/person-1.png',
   '/person-2.png',
   '/person-3.png',
   '/person-4.png',
-];
+]
 
 // FEATURES SECTION
-export const FEATURES = [
+export const FEATURES: Feature[] = [
   {
     title: 'Real maps can be offline',
     icon: '/map.svg',
@@ -45,10 +80,10 @@ export const FEATURES = [
     description:
       'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
   },
-];
+]
 
 // FOOTER SECTION
-export const FOOTER_LINKS = [
+export const FOOTER_LINKS: FooterLinkGroup[] = [
   {
     title: 'Learn More',
     links: [
@@ -64,23 +99,17 @@ export const FOOTER_LINKS = [
     title: 'Our Community',
     links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
   },
-];
+]
 
-export const FOOTER_CONTACT_INFO = {
+export const FOOTER_CONTACT_INFO: ContactInfo = {
   title: 'Contact Us',
   links: [
     { label: 'Admin Officer', value: '123-456-7890' },
     { label: 'Email Officer', value: 'arnob_t78@yahoo.com' },
   ],
-};
+}
 
-export const SOCIALS = {
+export const SOCIALS: Socials = {
   title: 'Social',
-  links: [
-    '/facebook.svg',
-    '/instagram.svg',
-    '/twitter.svg',
-    '/youtube.svg',
-    '/wordpress.svg',
-  ],
-};
+  links: ['/facebook.svg', '/instagram.svg', '/twitter.svg', '/youtube.svg', '/wordpress.svg'],
+}

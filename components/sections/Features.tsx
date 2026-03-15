@@ -4,6 +4,7 @@ const Features = () => {
   return (
     <section className="flexCenter flex-col overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
       <div className="max-container padding-container relative flex w-full justify-end">
+        {/* Left phone image */}
         <div className="flex flex-1 lg:min-h-[900px]">
           <img
             src="/phone.png"
@@ -14,8 +15,8 @@ const Features = () => {
             style={{ width: 'auto', height: 'auto' }}
           />
         </div>
-
         <div className="z-20 flex w-full flex-col lg:w-[60%]">
+          {/* Right-side top title */}
           <div className="relative">
             <img
               src="/camp.svg"
@@ -27,6 +28,7 @@ const Features = () => {
             />
             <h2 className="bold-40 lg:bold-64">Our Features</h2>
           </div>
+          {/* Right-side below list */}
           <ul className="lg:mg-20 mt-10 grid gap-10 md:grid-cols-2 lg:gap-20">
             {FEATURES.map((feature) => (
               <FeatureItem
