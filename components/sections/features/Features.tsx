@@ -1,4 +1,6 @@
 import { FEATURES } from '@/constants'
+import Image from 'next/image'
+import { FeatureItem } from '.'
 
 const Features = () => {
   return (
@@ -6,7 +8,7 @@ const Features = () => {
       <div className="max-container padding-container relative flex w-full justify-end">
         {/* Left phone image */}
         <div className="flex flex-1 lg:min-h-[900px]">
-          <img
+          <Image
             src="/phone.png"
             alt="phone"
             width={440}
@@ -18,7 +20,7 @@ const Features = () => {
         <div className="z-20 flex w-full flex-col lg:w-[60%]">
           {/* Right-side top title */}
           <div className="relative">
-            <img
+            <Image
               src="/camp.svg"
               alt="camp"
               width={50}
@@ -42,32 +44,6 @@ const Features = () => {
         </div>
       </div>
     </section>
-  )
-}
-
-type FeatureItemProps = {
-  title: string
-  icon: string
-  description: string
-}
-
-const FeatureItem = ({ title, icon, description }: FeatureItemProps) => {
-  return (
-    <li className="flex w-full flex-1 flex-col items-start">
-      <div className="rounded-full bg-green-50 p-4 lg:p-7">
-        <img
-          src={icon}
-          alt="map"
-          width={28}
-          height={28}
-          style={{ width: 'auto', height: 'auto' }}
-        />
-      </div>
-      <h2 className="bold-20 lg:bold-32 mt-5 capitalize">{title}</h2>
-      <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-[30px] lg:bg-none">
-        {description}
-      </p>
-    </li>
   )
 }
 
