@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  output: 'export',
   images: { unoptimized: true },
-};
+  // Hide information indicators in development mode
+  devIndicators: false,
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
