@@ -107,7 +107,7 @@
   }
 
   .bold-64 {
-    @apply text-[64px] font-[700] leading-[120%];
+    @apply text-[64px] font-[700] leading-[120%] text-blue-500;
   }
 
   .bold-52 {
@@ -115,7 +115,7 @@
   }
 
   .bold-40 {
-    @apply text-[40px] font-[700] leading-[120%];
+    @apply text-[40px] font-[700] leading-[120%] text-red-500;
   }
 
   .bold-32 {
